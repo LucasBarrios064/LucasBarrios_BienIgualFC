@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bien Igual F.C</title>
+        <link rel="shotcut icon" href="./assets/escudo_bienigual.png">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body class="body__index">
+        <header class="header">
+            <!--Fila del logo, Nombre del equipo y usuario-->
+            <div class="header__cabecera">
+                <a href="#" class="header__cabecera__logo">
+                    <img src="./assets/escudo_bienigual.png" alt="logo" class="header__cabecera__logo__img">
+                </a>
+
+                <h1 class="header__cabecera__titulo">Bien Igual Futbol Club</h1>
+
+                <a href="./paginas/usuario.html" class="header__cabecera__usuario">
+                    <img src="./assets/icono_usuario.png" alt="icono de usuario" class="header__cabecera__usuario__img">
+                </a>
+
+            </div>
+
+            <!--Fila del Navegador-->
+            <div id="navegador">
+                <nav>
+                    <ul class="header__navegador">
+                        <li><a href="#" class="header__navegador__link">Inicio</a></li>
+                        <li><a href="./paginas/noticias.html" class="header__navegador__link">Noticias</a></li>
+                        <li><a href="./paginas/nosotros.html" class="header__navegador__link">Nosotros</a></li>
+                        <li><a href="./paginas/galeria.html" class="header__navegador__link">Galeria</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main__index">
+            
+            <!--Esta es la seccion de presentacion del logo con un fondo de imagen-->
+            <section id="SectionPresentacion" class="presentacion">
+                <img src="./assets/escudo_bienigual.png" alt="logo" class="presentacion__logo">
+                <h2 class="presentacion__titulo">Bienvenidos a Bien Igual Futbol Club</h2>
+                <h3 class="presentacion__frase">la ilusion que me condena...</h3>
+            </section>
+
+            <!--Esta es la seccion con los distintos lugares que se pueden visitar en la pagina-->
+            <section id="SectionPaginas" class="paginas">
+                <div class="paginas__div"> 
+                    <a href="./paginas/noticias.html" class="paginas__link  img1">Noticias</a>
+                    <a href="./paginas/nosotros.html" class="paginas__link  img2">Nosotros</a>
+                    <a href="./paginas/galeria.html" class="paginas__link img3">Galeria</a>
+                </div>
+            </section>
+
+            <!--Seccion de Ultimas Noticias separadas por un <div>. (Las imagenes y videos son de muestra), los "leer mas" te llevan a "Noticias" en la noticia especifica-->
+            <section id="SectionUltimasNoticias" class="ultimasnoticias">
+
+                <h3 class="ultimasnoticias__titulo">Ultimas Noticias</h3>
+
+                <div class="ultimasnoticias__noticia">
+                    <img src="https://picsum.photos/200/100?random=1" alt="Primera Noticia" class="ultimasnoticias__noticia__img">
+                    <p class="ultimasnoticias__noticia__text">El equipo Bien Igual logro derrotar a “Los Negros” llevandose la victoria del campeonato y consigo la copa. <a href="./paginas/noticias.html#UltimaNoticia1" class="leerMas">Leer Mas.</a></p>
+                </div>
+
+                <div class="ultimasnoticias__noticia">
+                    <p class="ultimasnoticias__noticia__text">Los jovenes debutantes hacen historia en el partido logrando llevarnos a la victoria con un marcador de 5-1. <a href="./paginas/noticias.html#UltimaNoticia2" class="leerMas">Leer Mas.</a></p>
+                    <img src="https://picsum.photos/200/100?random=2" alt="Segunda Noticia" class="ultimasnoticias__noticia__img">
+                </div>
+
+                <div class="ultimasnoticias__noticia2">
+                    <iframe src="https://www.youtube.com/embed/PT4neebbG_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ulimasnoticias__noticia2__vid"></iframe>
+                    <p class="ultimasnoticias__noticia2__text">Bien Igual F.C logro llegar a primera "A" con este increible partido</p>
+                </div>
+
+            </section>
+
+            <!--Seccion en la que se muestran los sponsors (Las marcas son de muestra)-->
+            <section id="SectionSponsors" class="sponsors">
+                <h4 class="sponsors__titulo">Nuestros Sponsors</h4>
+                    <img src="./assets/sponsor1.png" alt="Logo de Adidas" class="sponsors__img adidas">
+                    <img src="./assets/sponsor2.png" alt="Logo de Nike" class="sponsors__img nike">
+                    <img src="./assets/sponsor3.png" alt="Logo de CocaCola" class="sponsors__img coca">
+            </section>
+
+            <!--Seccion de contacto-->
+            <section id="SectionContacto" class="contacto">
+                <h5 class="contacto__titulo">¿Quieres formar parte de nuestro equipo?</h5>
+                <a href="./paginas/contactanos.html" class="contacto__link">Contactanos</a>
+            </section>
+        </main>
+
+        <!--footer con las redes sociales utilizando una redireccion y el atributo _blank-->
+        <footer class="footer">
+            <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
+            <div>
+                <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img"><img src="./assets/instagram.png" alt="icono instagram" class="redsocial"></a>
+                <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img"><img src="./assets/facebook.png" alt="icono facebook" class="redsocial"></a>
+            </div>
+            <a href="./paginas/contactanos.html" class="footer__link">Contactanos</a>
+
+            <p class="footer__d">Desarrollado por Lucas Barrios. :)</p>
+        </footer>
+    </body>
+</html>
