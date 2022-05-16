@@ -7,6 +7,10 @@
         <title>Bien Igual F.C</title>
         <link rel="shotcut icon" href="../assets/escudo_bienigual.png">
         <link rel="stylesheet" href="../estilos.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
 
     <body>
@@ -36,36 +40,38 @@
         </header>
 
         <main>
-         <section id="SectionContacto" class="contactanos">
-                <h2 class="contactanos__titulo">Contactanos</h2>
-                <!--caja en la que se ubicaria la informaciona  completar para poder contactarse, el form action dijo la profesora que lo dejemos vacio -->
-                <form action="">
-                    <div class="formulario">
-                        <div class="formulario__nombre">
-                            <input type="text" placeholder="Nombre" class="formGrande">
-                            <input type="text" placeholder="Apellido" class="formGrande">
+            <section id="SectionContacto" class="contactanos">
+                    <h2 class="contactanos__titulo">Contactanos</h2>
+                    <!--caja en la que se ubicaria la informaciona  completar para poder contactarse, el form action dijo la profesora que lo dejemos vacio -->
+                    <form action="">
+                        <div class="formulario">
+                            <div class="formulario__nombre">
+                                <input type="text" placeholder="Nombre" class="formGrande">
+                                <input type="text" placeholder="Apellido" class="formGrande">
+                            </div>
+                            <div class="formulario__email">
+                                <input type="email" placeholder="Dejanos tu e-mail" class="formGrande">
+                            </div>
+                            <!--Caja de Aceptar y limpiar-->
+                            <div class="formulario__botones">
+                                <input type="reset" value="Limpiar" class="formBoton">
+                                <input type="submit" value="Aceptar" class="formBoton">
+                            </div>
                         </div>
-                        <div class="formulario__email">
-                            <input type="email" placeholder="Dejanos tu e-mail" class="formGrande">
-                        </div>
-                        <!--Caja de Aceptar y limpiar-->
-                        <div class="formulario__botones">
-                            <input type="reset" value="Limpiar" class="formBoton">
-                            <input type="submit" value="Aceptar" class="formBoton">
-                        </div>
-                    </div>
-                </form>
-         </section>
+                    </form>
+            </section>
         </main>
         
         <!--footer con las redes sociales utilizando una redireccion y el atributo _blank-->
         <footer class="footer">
             <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
+            <div>
             <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img"><img src="../assets/instagram.png" alt="icono instagram" class="redsocial"></a>
             <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img"><img src="../assets/facebook.png" alt="icono facebook" class="redsocial"></a>
+            </div>
             <a href="contactanos.html" class="footer__link">Contactanos</a>
 
             <p class="footer__d">Desarrollado por Lucas Barrios. :)</p>
-        </footer>    
+        </footer>   
     </body>
 </html>
