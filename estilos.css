@@ -33,6 +33,8 @@ header{
         justify-content: center;
         align-items: center;
         justify-items: center;
+        animation: fadeInDown;
+        animation-duration: 2s;
 }
 
 .header__cabecera__titulo{ 
@@ -45,6 +47,16 @@ header{
 .header__cabecera__logo__img{
     width: 110px;
 }
+
+.header__cabecera__logo__img:hover {
+    animation: swing;
+    animation-duration: 1.5s;
+}
+.header__cabecera__usuario__img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
 .header__cabecera__usuario__img {
     width: 60px;
 }
@@ -57,11 +69,20 @@ header{
     padding-right: 2%;
     padding-bottom: 0.5%;
     padding-top: 0.5%;
+    animation: fadeInRight;
+    animation-duration: 2s;
 }
 
 .header__navegador__link{
     background-color: none;
     color: rgb(255, 236, 236);
+    padding: 3%;
+}
+
+.header__navegador__link:hover{
+    background-color: rgb(126, 0, 0);
+    transition: 0.5s;
+    border-radius: 20%;
 }
 
 li{
@@ -87,8 +108,9 @@ li{
 }
 
 .presentacion__logo{
-    background-color: rgba(0, 0, 0, 0.219);
     width: 27%;
+    animation:bounceInDown;
+    animation-duration: 2s;
 }
 
 .presentacion__titulo , .presentacion__frase{
@@ -103,6 +125,9 @@ li{
     background-color: rgba(0, 0, 0, 0.219);
     font-size: 400%;
     font-family: 'Merienda', cursive;
+    animation: fadeIn ;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
 }
 
 /*Seccion en la que se indican las paginas de interes*/
@@ -116,7 +141,7 @@ li{
 .paginas__link{
     text-align: center;
     font-size: 350%;
-    color: rgb(255, 236, 236);
+    color: rgb(255, 255, 255);
     font-weight: 700;
     padding-top: 20%;
     padding-bottom: 30%;
@@ -125,7 +150,7 @@ li{
 .img1{
     background-image:url(./assets/imagen_noticias.jpg);
     background-position: top;
-    background-size: cover;
+    background-size: 100%;
 }
 .img2{
     background-image: url(./assets/imagen_nosotros.jpg);
@@ -141,6 +166,18 @@ li{
 
 .img1:hover , .img2:hover , .img3:hover {
     filter: opacity(0.8) drop-shadow(0 0 0 red);
+    transition: 0.5s;
+}
+.img1:hover{
+    background-size: 120%;
+}
+
+.img2:hover{
+    background-size: 180%;
+}
+
+.img3:hover{
+    background-size: 110%;
 }
 
 /*Seccion de Ultimas noticias y video*/
@@ -168,6 +205,7 @@ li{
     justify-content: center;
 }
 
+
 .ultimasnoticias__noticia__text{    
     font-size: 260%;
     width: 50%;
@@ -176,9 +214,15 @@ li{
 .leerMas{
     color: red;
 }
+
+.leerMas:hover{
+    text-decoration: underline;
+    text-shadow: 0px 1px 0px rgb(126, 0, 0);
+}
 .ultimasnoticias__noticia__img{
     width: 30%;
 }
+
 
 /*Video de las Ultimas noticias*/
 .ultimasnoticias__noticia2{
@@ -200,6 +244,7 @@ li{
     color: rgb(0, 0, 0);
     font-size: 210%;
     padding: 2%;
+    text-align: center;
 }
 
 /*Seccion de los sponsors*/
@@ -233,6 +278,11 @@ li{
 .coca{
     grid-area: SP3;
 }
+.sponsors img:hover{
+    animation: swing;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
 
 /*Seccion de Contacto*/
 
@@ -260,6 +310,11 @@ li{
     padding: 1%;
     text-align: center;
 }
+.contacto__link:hover{
+    animation: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 /*Comienzo del footer*/
 
@@ -281,12 +336,26 @@ footer div{
 }
 .redsocial{
     width: 5%;
+    animation-name: giro;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.redsocial:hover{
+    transform: scale(1.3);
+    transition: 0s;
+}
+
+@keyframes giro {
+    0%{transform: rotateX(360deg);}
 }
 
 footer div a{
     margin: 2%;
 }
- .footer__text{
+
+.footer__text{
     font-size: 200%;
     grid-area: TituloF;
 }
@@ -297,6 +366,11 @@ footer div a{
     color: aliceblue;
     background-color: black;
     text-align: center;
+}
+
+.footer__link:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .footer__d{
@@ -358,18 +432,25 @@ footer div a{
 .galeria__fotos__img10{
     grid-area:g10 ;
 }
-
-.galeria__fotos img{
-    padding: 1%;
-    background-color: rgb(255, 87, 87);
-    filter: grayscale(0.3);
-}
-/*agrege el hover con el filter porque lo vimos en un afterclass y me gusto como quedaba*/
 .galeria__fotos img:hover{
     background-color: red;
     filter: none;
 }
+.galeria__fotos img{
+    padding: 1%;
+    background-color: rgb(255, 87, 87);
+    filter: grayscale(0.3);
+    animation: caida 6s ease-in-out 0s 1;
+}
 
+
+@keyframes caida {
+    0%{position: relative;
+        top: -1000%;}
+    50%{position: relative;
+        top: 0%;}
+
+}
 
 
 /*Aca inicia la pagina de nosotros.html */
@@ -392,13 +473,13 @@ footer div a{
     font-family: 'Anek Gujarati', sans-serif;
     margin-left: 5%;
     position: absolute;
-        top: 30%;
+        top: 35%;
 }
 
 .historia__text{
     width: 80%;
     position: absolute;
-        top: 40%;
+        top: 45%;
 }
 
 /*Seccion de Nuestro Equipo*/
@@ -898,4 +979,15 @@ label{
         display: flex;
         flex-direction: column;
     }   
+
+    .galeria__fotos img{
+        animation: entradaIzquierda 4s ease 0s 1;
+    }
+
+    @keyframes entradaIzquierda {
+        0%{position: relative;
+            left: -1000%;}
+        50%{position: relative;
+            left: 0%;}
+    }
 }
