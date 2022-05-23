@@ -21,18 +21,8 @@ a{
 
 header{
     background-color: rgb(37, 37, 37);
-    display: grid;
-    grid-template-rows: 80% 20%;
-    z-index: 10;
-    position: sticky;
-    top: 0%;
 }
 .header__cabecera{
-    display: grid;
-        grid-template-columns: 1fr 6fr 1fr;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
         animation: fadeInDown;
         animation-duration: 2s;
 }
@@ -41,7 +31,6 @@ header{
     font-size: 500%;
     font-family: 'Anek Gujarati', sans-serif;
     color: aliceblue;
-    margin-right: 50%;
 
 }
 .header__cabecera__logo__img{
@@ -63,12 +52,6 @@ header{
 
 .header__navegador{
     background-color: rgb(179,6,10);
-    display: flex;
-    justify-content: end;
-    gap: 2%;
-    padding-right: 2%;
-    padding-bottom: 0.5%;
-    padding-top: 0.5%;
     animation: fadeInRight;
     animation-duration: 2s;
 }
@@ -76,13 +59,14 @@ header{
 .header__navegador__link{
     background-color: none;
     color: rgb(255, 236, 236);
-    padding: 3%;
+    margin: 1%;
+    padding: 2%;
 }
 
 .header__navegador__link:hover{
     background-color: rgb(126, 0, 0);
     transition: 0.5s;
-    border-radius: 20%;
+    color: rgba(255, 208, 208, 0.904);
 }
 
 li{
@@ -90,21 +74,16 @@ li{
     font-size: 20px;
 }
 
+.colorBoton{
+    background-color: white;
+}
 
 /*Aca comienza la pagina de index.html*/
 /*Primera Seccion que aparece, Seccion de presentacion*/
 
-.main__index{
-    display: grid;
-        grid-template-rows: auto auto auto auto auto;
-}
 .presentacion{
     background-image: url(./assets/pasto.jpg);
     background-position: 80%;
-    padding-bottom: 4%;
-    display: grid;
-        grid-template-rows: auto auto auto;
-        justify-items: center;
 }
 
 .presentacion__logo{
@@ -115,7 +94,6 @@ li{
 
 .presentacion__titulo , .presentacion__frase{
     background-color: rgba(0, 0, 0, 0.219);
-    text-align: center;
     color: rgb(255, 236, 236);
     font-size: 500%;
     font-family: 'Anek Gujarati', sans-serif;
@@ -132,25 +110,19 @@ li{
 
 /*Seccion en la que se indican las paginas de interes*/
 
-.paginas__div{
-    display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: top;
-}
 
 .paginas__link{
-    text-align: center;
     font-size: 350%;
     color: rgb(255, 255, 255);
     font-weight: 700;
-    padding-top: 20%;
-    padding-bottom: 30%;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .img1{
     background-image:url(./assets/imagen_noticias.jpg);
     background-position: top;
-    background-size: 100%;
+    background-size: 105%;
 }
 .img2{
     background-image: url(./assets/imagen_nosotros.jpg);
@@ -167,9 +139,10 @@ li{
 .img1:hover , .img2:hover , .img3:hover {
     filter: opacity(0.8) drop-shadow(0 0 0 red);
     transition: 0.5s;
+    color: white;
 }
 .img1:hover{
-    background-size: 120%;
+    background-size: 125%;
 }
 
 .img2:hover{
@@ -182,56 +155,36 @@ li{
 
 /*Seccion de Ultimas noticias y video*/
 
-.ultimasnoticias{
-    display: grid;
-    grid-template-rows: repeat(5,auto);
-    margin-top: 2%;
-    justify-items: center;
-}
 
 .ultimasnoticias__titulo{
     font-size: 450%;
     color: aliceblue;
     text-decoration: underline;
-    padding: 1%;
-    margin-top: 2%;
 }
 
 .ultimasnoticias__noticia{
     background-color: rgb(255, 236, 236);
     width: 70%;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
 }
 
 
 .ultimasnoticias__noticia__text{    
-    font-size: 260%;
-    width: 50%;
-    margin: 3%;
+    font-size: 250%;
 }
 .leerMas{
     color: red;
 }
 
 .leerMas:hover{
+    color: red;
     text-decoration: underline;
     text-shadow: 0px 1px 0px rgb(126, 0, 0);
-}
-.ultimasnoticias__noticia__img{
-    width: 30%;
 }
 
 
 /*Video de las Ultimas noticias*/
 .ultimasnoticias__noticia2{
-    display: grid;
     background-color: rgb(255, 236, 236);
-    grid-template-rows: auto auto;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    padding-top: 1%;
     width: 70%;
 }
 
@@ -243,41 +196,24 @@ li{
 .ultimasnoticias__noticia2__text{
     color: rgb(0, 0, 0);
     font-size: 210%;
-    padding: 2%;
-    text-align: center;
 }
 
 /*Seccion de los sponsors*/
 
 .sponsors{
     background-color: rgb(34, 34, 34);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-        "tituloS tituloS tituloS"
-        "SP1 SP2 SP3";
-        justify-items: center;
-        align-items: center;
 }
 .sponsors__titulo{
-    grid-area: tituloS;
     font-size: 350%;
     color: aliceblue;
     text-decoration:underline;
 
 }
 .adidas{
-    grid-area: SP1;
     background-color: aliceblue;
     border-radius: 30%;
 }
-.nike{
-    grid-area: SP2;
-}
-.coca{
-    grid-area: SP3;
-}
+
 .sponsors img:hover{
     animation: swing;
     animation-duration: 2.5s;
@@ -288,11 +224,7 @@ li{
 
 .contacto{
     background-image: url(./assets/imagen_formulario1.jpg);
-    padding: 3%;
     background-position: center;
-    display: grid;
-        grid-template-columns: 70% 30%;
-        align-items: center;
 }
 
 .contacto__titulo{
@@ -301,45 +233,25 @@ li{
 }
 
 .contacto__link{
+    color: white;
     font-size: 300%;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.493);
-    border-radius: 2%;
-    padding: 1%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.582);
 }
+
 .contacto__link:hover{
-    animation: flash;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    background-color: red;
+    border-color: white;
+    transform: scale(1.1);
 }
 
 /*Comienzo del footer*/
 
 footer{
     background-color: rgb(196,196,196);
-    padding: 2%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-        justify-content: center;
-        align-items: center;
-    grid-template-areas: 
-        "TituloF CT"
-        "RedS DS ";
 }
 
-footer div{
-    grid-area: RedS;
-}
 .redsocial{
-    width: 5%;
-    animation-name: giro;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    width: 10%;
 }
 
 .redsocial:hover{
@@ -347,34 +259,17 @@ footer div{
     transition: 0s;
 }
 
-@keyframes giro {
-    0%{transform: rotateX(360deg);}
-}
-
-footer div a{
-    margin: 2%;
-}
-
 .footer__text{
     font-size: 200%;
-    grid-area: TituloF;
 }
 
 .footer__link{
-    grid-area: CT;
     font-size: 300%;
-    color: aliceblue;
     background-color: black;
-    text-align: center;
 }
 
-.footer__link:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
 
 .footer__d{
-    grid-area: DS;
     font-size: 150%;
 }
 
@@ -383,11 +278,7 @@ footer div a{
 
 .galeria__fotos{
     display: grid;
-    width: 90%;
-    margin-left: 5%;
     gap: 1%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
@@ -457,13 +348,10 @@ footer div a{
 
 .nosotros{
     font-size: 200%;
-    margin: 5%;
 }
 
 /*Seccion de Historia del Equipo*/
-.historia{
-    padding: 4%;
-    padding-bottom: 25%;
+.color-nosotros{
     background-color: rgb(255, 255, 240);
 }
 
@@ -471,90 +359,32 @@ footer div a{
     font-size: 250%;
     text-decoration-line: underline;
     font-family: 'Anek Gujarati', sans-serif;
-    margin-left: 5%;
-    position: absolute;
-        top: 35%;
-}
-
-.historia__text{
-    width: 80%;
-    position: absolute;
-        top: 45%;
 }
 
 /*Seccion de Nuestro Equipo*/
 
 .equipo{
-    margin-top: 5%;
-    margin-bottom: 5%;
     background-color: rgb(255, 87, 87);
-    padding: 1%;
 }
 
 .equipo__titulo{
     font-size: 250%;
     text-decoration-line: underline;
     font-family: 'Anek Gujarati', sans-serif;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    padding-top: 3%;
 }
 
-.equipo__jugadorA{
-    display: inline-block;
-    margin: 1%;
-    padding: 1%;
+.negrita{
+    font-weight: 900;
+}
+
+.tarjeta-jugador{
     background-color: rgb(255, 255, 240);
-}
-.equipo__jugadorA__img{
-    float: left;
-    margin-left: 5%;
-    margin-top: 3%;
-}
-
-.equipo__jugadorA__nombre{
-    font-size: 150%;
-    margin-left: 30%;
-}
-
-.equipo__jugadorA__text{
-    width: 50%;
-    margin-left: 30%;
-    margin-top: 3%;
-}
-
-.equipo__jugadorB{
-    display: inline-block;
-    margin: 1%;
-    padding: 1%;
-    background-color: rgb(255, 255, 240);
-}
-.equipo__jugadorB__img{
-    float: right;
-    margin-right: 5%;
-    margin-top: 3%;
-}
-
-.equipo__jugadorB__nombre{
-    font-size: 150%;
-    margin-left: 49%;
-}
-
-.equipo__jugadorB__text{
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 20%;
+    border-color: black;
 }
 
 /* Seccion de la Hinchada*/
 
-.hinchada{
-    background-color: rgb(255, 255, 240);
-    padding: 4%;
-}
-
 .hinchada__titulo{
-    margin-left: 58%;
     font-size: 250%;
     text-decoration-line: underline;
     font-family: 'Anek Gujarati', sans-serif;
@@ -562,70 +392,47 @@ footer div a{
 
 /*Aca empieza la pagina de contactanos.html*/
 
-.contactanos{
-    padding: 3%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
 .contactanos__titulo{
     font-size: 400%;
+    font-weight: 900;
     text-decoration: underline;
-    text-align: center;
     color: rgb(0, 0, 0);
-    margin-bottom: 2%;
 }
 
 form{
-    padding: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%;
     outline: 2px solid rgb(255, 0, 0);
     background-color: rgb(37, 37, 37);
-
 }
 
-.formGrande{
-    width: 50%;
-    padding: 2%;
-    text-align: left;
-    margin: 1%;
-    margin-left: 25%;
-    outline: red 2px solid;
+.email-contacto{
+    color: white;
 }
 
-.formBoton{
-    width: 10%;
-    padding: 0.5%;
-    margin-left: 25%;
+.boton-contacto{
+    background-color: rgb(201, 0, 0);
+    color: white;
+    font-weight: 550;
+}
 
+.boton-contacto:hover{
+    background-color:rgb(126, 0, 0) ;
+    color: rgb(204, 204, 204);
 }
 
 /*Aca inicia la pagina de usuario.html
 Use algunas class de la pagina anterior*/
 
-.sesion{
-    padding: 2%;
-}
 .sesion__titulo{
-    text-align: center;
-    text-decoration: underline;
     font-size: 300%;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    font-weight: 900;
 }
 
-.sesion__checkbox{
-    margin-left: 25%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.sesion2__checkbox{
-    margin: 1%;
-    margin-left: 25%;
-}
 label{
     font-size: 150%;
+}
+
+.formulario-blanco{
+    color: white;
 }
 
 /*Aca inicia la pagina de noticias.html*/
@@ -636,350 +443,71 @@ label{
 .marcador__titulo {
     font-size: 450%;
     color: aliceblue;
-    padding-left: 20%;
-    background-color: rgba(255, 0, 0, 0.021);
-    margin-top: 5%;
+    background-color: rgb(75, 75, 75);
+    border: 1px rgb(0, 0, 0) solid;
 }
 
 .marcador p{
     font-size: 200%;
-    margin-left: 20%;
-    padding: 1%;
-    padding-left: 4%;
-    width: 40%;
     background-color: rgb(255,236,236);
+    border: 1px rgb(0, 0, 0) solid;
 }
 
 /*Seccion de las noticias*/
 .noticias__titulo{
     font-size: 450%;
     color: aliceblue;
-    padding-left: 20%;
     background-color: rgba(255, 0, 0, 0.021);
-    margin-top: 5%;
 }
 
 .noticias__cuerpo{
     background-color: rgb(255,236,236);
-    width: 80%;
-    height: 10%;
-    padding: 1%;
-    margin-left: 10%;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
 
 .noticias__cuerpo img{
-    margin-left: 2.5%;
-    margin-top: 1%;
-    float: left;
     padding: 1%;
     background-color: rgb(255, 87, 87);
 }
+.noticias__cuerpo img:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
 
 .noticias__cuerpo p{
-    margin-left: 27%;
     font-size: 140%;
-    padding: 2%;
 }
 
-.marginfooter{
-    margin-bottom: 7%;
-}
-
-.margintitulo{
-    margin-top: 5%;
-    margin-bottom: 3%;
-}
-
-/* Media query aplicada a partir de que la pantalla sea 600px*/
-@media (max-width:600px){   
-
-    /*Header en 600px*/
-    .header__cabecera{
-        display: flex;
-        justify-content:space-evenly
-    }
-    
-    .header__cabecera__titulo{ 
-        margin: 2%;
-        font-size: 400%;
-    
-    }
-    .header__cabecera__logo__img{
-        width: 110px;
-    }
-    .header__cabecera__usuario__img {
-        width: 60px;
-    }
-    
-    .header__navegador{
-        display: flex;
-        justify-content: space-evenly;
+@media (max-width: 992px ) {
+    .img1{
+        background-size: 90%;
+        background-position: center;
     }
 
-        /*Aca comienza la pagina de index.html*/
-    /*Primera Seccion que aparece, Seccion de presentacion*/
-
-    .presentacion{
-        background-position: 30%;
-    }
-
-
-    .presentacion__titulo , .presentacion__frase{
-        font-size: 350%;
-    }
-
-    .presentacion__frase{
-        font-size: 300%;
-    }
-
-    /*Seccion en la que se indican las paginas de interes*/
-
-    .paginas__div{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .paginas__link{
-        font-size: 300%;
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
     .img2{
         background-size: 100%;
     }
-
     .img3{
         background-position:50% 35%;
         background-size: 80%;
     }
 
-    .img1:hover , .img2:hover , .img3:hover {
-        filter: opacity(0.8) drop-shadow(0 0 0 red);
+    .img1:hover{
+        background-size: 110%;
     }
 
-    /*Seccion de Ultimas noticias y video*/
-
-    .ultimasnoticias__noticia{
-        width: 90%;
+    .img2:hover{
+        background-size: 120%;
     }
 
-    .ultimasnoticias__noticia__text{    
-        font-size: 200%;
-        width: 60%;
-        margin: 2%;
+    .img3:hover{
+        background-size: 100%;
     }
 
-    .ultimasnoticias__noticia__img{
-        width: 40%;
-    }
-
-    /*Video de las Ultimas noticias*/
-    .ultimasnoticias__noticia2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
-
-    .ultimasnoticias__noticia2 iframe{
-        width: 95%;
-    }
-
-    .ultimasnoticias__noticia2__text{
-        font-size: 150%;
-    }
-
-    /*Seccion de los sponsors*/
-    .sponsors{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .sponsors__titulo{
-        font-size: 250%;
-        padding: 2%;
-
-    }
-    .nike{
-        width: 30%;
-    }
-    .coca{
-        width: 30%;
-    }
-
-
-    /*Seccion de Contacto*/
-
-    .contacto{
-        background-position: center;
-        display: flex;
-        text-align: center;
-    }
-
-    .contacto__titulo{
-        padding: 0%;
-        padding-top: 3%;
-        font-size: 300%;
-    }
-
-    .contacto__link{
-        font-size: 250%;
-    }
-
-    /*footer en 600px*/
-
-    footer{
-        padding-top: 10%;
-        padding-bottom: 5%;
-    }
-
-    .redsocial{
-        width: 20%;
-    }
-
-    .footer__text{
-        font-size: 150%;
-        width: 70%;
-    }
-
-    .footer__link{
-        font-size: 250%;
-    }
-
-    .footer__d{
-        font-size: 130%;
-        margin-top: 50%;
-    }   
-
-}
-
-
-/*Medoa query aplicada para cuando la pantalla sea de 370px o menor*/
-@media(max-width:370px){
-
-    /*Header en 370px*/
-    .header__cabecera__titulo{ 
-        margin: 1%;
-        padding: 2%;
-        font-size: 300%;
-    
-    }
-    .header__cabecera__logo__img{
-        width: 100px;
-    }
-    .header__cabecera__usuario__img {
-        width: 50px;
-    }
-
-    .header__navegador__link{
-        font-size: 80%;
-    }
-    
-    /*Aca comienza la pagina de index.html*/
-    /*Primera Seccion que aparece, Seccion de presentacion*/
-
-    .presentacion{
-        background-position: 50%;
-        background-size: 200%;
-    }
-
-    .presentacion__logo{
-        width: 50%;
-    }
-
-
-    .presentacion__titulo , .presentacion__frase{
-        font-size: 240%;
-    }
-
-    .presentacion__frase{
-        font-size: 200%;
-    }
-
-    /*Seccion de Ultimas noticias y video*/
-    .ultimasnoticias__titulo{
-        font-size: 300%;
-    }
-
-    .ultimasnoticias__noticia__text{    
-        font-size: 150%;
-        width: 65%;
-    }
-
-    .ultimasnoticias__noticia__img{
-        width: 35%;
-    }
-
-    /*Video de las Ultimas noticias*/
-    .ultimasnoticias__noticia2__text{
-        font-size: 150%;
-        text-align: center;
-    }
-
-    .ultimasnoticias__noticia2 iframe{
-        height: 200px;
-    }
-
-    /*Seccion de los sponsors*/
-    .sponsors__titulo{
-        margin-bottom: 4%;
-    }
-    
-    .adidas{
-        width: 40%;
-    }
-    /*Seccion de Contacto*/
-    .contacto__titulo{
-        padding: 2%;
-        font-size: 200%;
-    }
-
-    .contacto__link{
-        font-size: 200%;
-    }
-
-    /*footer en 370px*/
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 2%;
-    }
-    .redsocial{
-        width: 20%;
-        margin-top: 2%;
-        margin-left: 15%;
-    }
-
-    .footer__text{
-        font-size: 150%;
-        width: 80%;
-        text-align: center;
-    }
-
-    .footer__link{
-        margin-top: 20%;
-        padding: 2%;
-        text-align: center;
-        font-size: 200%;
-        width: 80%;
-    }
-
-    .footer__d{
-        font-size: 100%;
-        margin-top: 5%;
-    }   
-
-    /*pagina galeria.html en 370px*/
-
+    /*galeria.html en menos de 992px o lg*/
     .galeria__fotos{
         display: flex;
-        flex-direction: column;
-    }   
-
+            flex-direction: column;
+    }
     .galeria__fotos img{
         animation: entradaIzquierda 4s ease 0s 1;
     }
@@ -990,4 +518,5 @@ label{
         50%{position: relative;
             left: 0%;}
     }
+
 }

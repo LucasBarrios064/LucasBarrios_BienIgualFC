@@ -6,92 +6,149 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bien Igual F.C</title>
         <link rel="shotcut icon" href="../assets/escudo_bienigual.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../estilos.css">
     </head>
 
     <body>
         <header class="header">
             <!--Fila del logo, Nombre del equipo y usuario-->
-            <div class="header__cabecera">
-                <a href="../index.html" class="header__cabecera__logo">
+            <div class="header__cabecera d-flex d-flex justify-content-between  align-items-center">
+                <a href="../index.html" class="header__cabecera__logo ">
                     <img src="../assets/escudo_bienigual.png" alt="logo" class="header__cabecera__logo__img">
                 </a>
-                <h1 class="header__cabecera__titulo">Bien Igual Futbol Club</h1>
-                <a href="usuario.html" class="header__cabecera__usuario">
+
+                <h1 class="header__cabecera__titulo ">Bien Igual Futbol Club</h1>
+
+                <a href="usuario.html" class="header__cabecera__usuario me-2">
                     <img src="../assets/icono_usuario.png" alt="icono de usuario" class="header__cabecera__usuario__img">
                 </a>
+
             </div>
 
             <!--Fila del Navegador-->
-            <div id="navegador">
-                <nav>
-                    <ul class="header__navegador">
-                        <li><a href="../index.html" class="header__navegador__link">Inicio</a></li>
-                        <li><a href="noticias.html" class="header__navegador__link">Noticias</a></li>
-                        <li><a href="nosotros.html" class="header__navegador__link">Nosotros</a></li>
-                        <li><a href="galeria.html" class="header__navegador__link">Galeria</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg header__navegador">
+                <div class="container-fluid d-flex justify-content-center">
+                    <button class="navbar-toggler colorBoton mb-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav header__navegador">
+                            <li class="nav-item">
+                                <a class="nav-link header__navegador__link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__navegador__link" href="noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__navegador__link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__navegador__link" href="galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <main>
+            <div>
             <!-- Seccion en la que el usuario Iniciara Sesion de una cuenta ya creada-->
-            <Section id="SectionInicioSesion" class="sesion">
-                <div>
-                     <h2 class="sesion__titulo">Iniciar Sesion</h2>
-                    <form action="" class="sesion__form">
-                        <div>
-                            <input type="text" placeholder="Nombre de Usuario" class="formGrande">
+                <h2 class="sesion__titulo text-center mt-5">Iniciar Sesion</h2>
+                <form class="container mb-5 p-5 mt-3">
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label class="visually-hidden" for="specificSizeInputGroupUsername">Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Usuario">
+                            </div>
                         </div>
-                        <div>
-                            <input type="password" placeholder="Ingrese su Contraseña" class="formGrande">
-                        </div>
-                        <div class="sesion__checkbox">
-                            <label><input type="checkbox" value="1" name="recuerda"> Recordarme mas tarde</label>
-                        </div>
-                        <div>
-                            <input type="submit" placeholder="Aceptar" class="formBoton">
-                        </div>
-                    </form>
-                </div>
-            </section>
+                    </div>
 
+                    <div class="mb-3 row">
+                        <label for="inputPassword"class="visually-hidden" >Password</label>
+                        <div class="col-md-5">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    
+                    <div class="form-check formulario-blanco mt-5">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">Recordarme mas tarde</label>
+                    </div>
+
+                    <div>
+                    <button type="submit" class="btn boton-contacto">enviar</button>    
+                    </div>
+                </form>
+            </div>
             <!-- Seccion en la que el usuario podra crearse una cuenta-->
-            <section id="SectionCrearCuenta" class="sesion"> 
-                <div>
-                    <h2 class="sesion__titulo">Registrarse</h2>
-                    <form action="">
-                        <div>
-                            <input type="text" placeholder="Nombre de Usuario" class="formGrande">
-                            <input type="email" placeholder="Ingrese su Email" class="formGrande">
+            <div>
+                <h2 class="sesion__titulo text-center mt-5">Registrarse</h2>
+                <form class="container mb-5 p-5 mt-3">
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label class="form-label formulario-blanco" for="specificSizeInputGroupUsername">Nombre de Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Usuario">
+                            </div>
                         </div>
-                        <div>
-                            <input type="password" placeholder="Contraseña" class="formGrande">
-                            <input type="password" placeholder="Repetir Contraseña" class="formGrande">
-                        </div>
-                        <div class="sesion2__checkbox">
-                            <label><input type="checkbox" value="1" name="acepta">Acepto Terminos y Condiciones</label>
-                            <label><input type="checkbox" value="1" name="se suscribe">Deseo Suscribirme a las Noticias</label>
-                        </div>
-                        <div>
-                            <input type="reset" value="Limpiar" class="formBoton">
-                            <input type="submit" value="Aceptar" class="formBoton">
-                        </div>
-                    </form>
-                </div>
-            </Section>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="exampleInputEmail1" class="form-label formulario-blanco">Ingrese su email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">
+                    </div>
 
+                    <div class="mb-3 row">
+                        <label for="inputPassword"class="visually-hidden" >Password</label>
+                        <div class="col-md-5">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword"class="visually-hidden" >Password</label>
+                        <div class="col-md-5">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Repetir Contraseña">
+                        </div>
+                    </div>
+
+                    <div class="form-check formulario-blanco mt-3">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Deseo suscribirme a las noticias</label>
+                    </div>
+                    
+                    <div class="form-check formulario-blanco mb-2">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">Recordarme mas tarde</label>
+                    </div>
+
+                    <div>
+                    <button type="submit" class="btn boton-contacto">enviar</button>    
+                    </div>
+                </form>
+            </div>
         </main>
         
         <!--footer con las redes sociales utilizando una redireccion y el atributo _blank-->
-        <footer class="footer">
-            <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
-            <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img"><img src="../assets/instagram.png" alt="icono instagram" class="redsocial"></a>
-            <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img"><img src="../assets/facebook.png" alt="icono facebook" class="redsocial"></a>
-            <a href="contactanos.html" class="footer__link">Contactanos</a>
+        <footer class="footer container-fluid d-flex flex-wrap p-5 pb-2 justify-content-between align-items-center flex-column flex-lg-row">
 
-            <p class="footer__d">Desarrollado por Lucas Barrios. :)</p>
-        </footer>        
+            <div class="col-lg-6 text-center">
+                <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
+                <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img m-5"><img src="../assets/instagram.png" alt="icono instagram" class="redsocial"></a>
+                <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img m-5"><img src="../assets/facebook.png" alt="icono facebook" class="redsocial"></a>
+            </div>
+    
+            <div class="col-lg-6 text-center mt-5" >
+                <a href="contactanos.html" class="footer__link btn btn-outline-warning btn-dark">Contactanos</a>
+            </div>
+    
+            <p class="footer__d col-12 text-center mt-5">Desarrollado por Lucas Barrios. :)</p>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>       
     </body>
 </html>
