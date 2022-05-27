@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px red solid;
 }
 
 body{
@@ -520,4 +521,17 @@ label{
             left: 0%;}
     }
 
+}
+
+@media (max-width: 410px ){
+    .header__cabecera{
+        font-size: 70%;
+    }
+
+    .presentacion__titulo{
+        font-size: 300%;
+    }
+    .presentacion__frase{
+        font-size: 280%;
+    }
 }
