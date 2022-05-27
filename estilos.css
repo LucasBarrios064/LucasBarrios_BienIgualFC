@@ -210,9 +210,8 @@ li{
     text-decoration:underline;
 
 }
-.adidas{
-    background-color: aliceblue;
-    border-radius: 30%;
+.sponsor-circular{
+    border-radius: 50%;
 }
 
 .sponsors img:hover{
@@ -465,7 +464,7 @@ label{
     background-color: rgb(255,236,236);
 }
 
-.noticias__cuerpo img{
+.noticias__cuerpo img , .ultimasnoticias__noticia img{
     padding: 1%;
     background-color: rgb(255, 87, 87);
 }
@@ -518,6 +517,12 @@ label{
             left: -1000%;}
         50%{position: relative;
             left: 0%;}
+    }
+
+    .achicar-img{
+        width: 350px;
+        height: 400px;
+        margin: auto;
     }
 
 }
