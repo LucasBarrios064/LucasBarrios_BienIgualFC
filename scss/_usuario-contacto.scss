@@ -1,0 +1,41 @@
+/*CONTACTO*/
+
+.formularios{
+    h2{
+        font-size: $font-400;
+        font-weight: $negrita;
+        text-decoration: underline;
+        color: $negro;
+    }
+
+    form{
+        outline: 2px solid $rojo;
+        background-color: $color-fondo-secundario;
+            div{
+                label{
+                    font-size: $font-150;
+                }
+            }    
+            .formulario-blanco{
+                color: white;
+            }
+    }
+
+    div{
+        .email-contacto{
+            color: $blanco;
+        }
+        .boton-contacto{
+            background-color: $rojo;
+            color: $blanco;
+            font-weight: $negrita;
+                &:hover{
+                    background-color:$bgcolor-nav-hover;
+                    color: $color-nav-hover;
+                }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,90 @@
+/*HEADER*/
+header{
+    background-color: $color-fondo-secundario;
+    position: sticky;
+        top: 0%;
+        z-index: 10;
+
+        .header__cabecera{
+            animation: fadeInDown;
+            animation-duration: 2s;
+
+                h1{ 
+                    font-size: $font-500;
+                    font-family: $font-titulos;
+                    color: $blanco;
+                }
+
+                .header__cabecera__usuario {
+                    img{
+                        width: 60px;
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: 1s;
+                            }
+                        }
+                    }
+
+                .header__cabecera__logo{
+                    img {         
+                        width: 110px;
+                            &:hover{
+                                animation: swing;
+                                animation-duration: 1.5s;
+                            }
+                        }
+                    }
+        }
+
+        .header__navegador{
+            background-color: $color-nav;
+            animation: fadeInRight;
+            animation-duration: 2s;
+                .header__navegador__link{
+                    color: $blanco-rojo;
+                        &:hover{
+                            background-color: $bgcolor-nav-hover;
+                            transition: 0.5s;
+                            color: $color-nav-hover;
+                    }
+                }
+                .colorBoton{
+                    background-color: $blanco;
+                }
+        }
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: $color-fondo-claro;
+
+        .redsocial{
+            width: 10%;
+                &:hover{
+                    transform: scale(1.3);
+                    transition: 0s;
+                }
+        }
+        
+        .redsocial:hover{
+            transform: scale(1.3);
+            transition: 0s;
+        }
+
+        .footer__link{
+            font-size: $font-300;
+            background-color: $negro;
+        }
+        .footer__text{
+            font-size: $font-200;
+        }
+        
+        .footer__d{
+            font-size: $font-150;
+    }
+}
+
+
+

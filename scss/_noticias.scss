@@ -1,0 +1,39 @@
+/*MARCADOR*/
+.marcador{
+    h3 {
+        font-size: $font-450;
+        color: $blanco;
+        background-color: $color-fondo-marcador;
+        border: 1px $negro solid;
+    }
+    p{
+        font-size: $font-200;
+        background-color: $blanco-rojo;
+        border: 1px $negro solid;
+    }
+}
+
+/*Seccion de las noticias*/
+.noticias{
+    h2{
+        font-size:$font-450;
+        color: $blanco;
+    }
+
+    div{
+        background-color: $blanco-rojo;
+
+        img{
+            padding: 1%;
+            background-color: $color-marco-img;
+                
+                &:hover{
+                    background-color: $rojo;
+                    transform: scale(1.2);
+                }
+        }
+    }
+    p{
+        font-size: ($font-150)-10%;
+    }
+}

@@ -1,0 +1,70 @@
+@media (max-width: 992px ) {
+
+    /*Imagenes de las paginas en index.html*/
+    .paginas{
+        div{
+            .img1{
+                background-size: 90%;
+                background-position: center;
+                    &:hover{
+                        background-size: 110%;
+                    }
+            }
+
+            .img2{
+                background-size: 100%;
+                    &:hover{
+                        background-size: 120%;
+                    }
+            }
+            .img3{
+                background-position:50% 35%;
+                background-size: 80%;
+                    &:hover{
+                        background-size: 100%;
+                    }
+            }
+        }
+    }
+
+
+    /*galeria.html en menos de 992px o lg*/
+    .galeria__fotos{
+        display: flex;
+        flex-direction: column;
+            img{
+                animation: entradaIzquierda 4s ease 0s 1;
+            }
+    }
+    
+
+    @keyframes entradaIzquierda {
+        0%{position: relative;
+            left: -1000%;}
+        50%{position: relative;
+            left: 0%;}
+    }
+
+    /*imagen de Nosotoros/Historia*/
+    .achicar-img{
+        width: 350px;
+        height: 400px;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 410px ){
+    .header__cabecera{
+        font-size: $font-70;
+    }
+
+    .presentacion{
+        h2{
+            font-size: $font-300;
+        }
+        h3{
+            font-size: ($font-300)-20%;
+        }
+    }
+}

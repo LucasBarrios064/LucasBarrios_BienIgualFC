@@ -8,7 +8,7 @@
         <link rel="shotcut icon" href="./assets/escudo_bienigual.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="./css/main.css">
     </head>
     </head>
 
@@ -17,13 +17,13 @@
             <!--Fila del logo, Nombre del equipo y usuario-->
             <div class="header__cabecera d-flex d-flex justify-content-between  align-items-center">
                 <a href="#" class="header__cabecera__logo ">
-                    <img src="./assets/escudo_bienigual.png" alt="logo" class="header__cabecera__logo__img">
+                    <img src="./assets/escudo_bienigual.png" alt="logo">
                 </a>
-
-                <h1 class="header__cabecera__titulo ">Bien Igual Futbol Club</h1>
+                
+                <h1>Bien Igual Futbol Club</h1>
 
                 <a href="./paginas/usuario.html" class="header__cabecera__usuario me-2">
-                    <img src="./assets/icono_usuario.png" alt="icono de usuario" class="header__cabecera__usuario__img">
+                    <img src="./assets/icono_usuario.png" alt="icono de usuario">
                 </a>
 
             </div>
@@ -33,7 +33,7 @@
                 <button class="navbar-toggler colorBoton m-auto mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-center" id="navbarNav">
                         <ul class="navbar-nav header__navegador">
                             <li class="nav-item">
@@ -58,67 +58,70 @@
             
             <!--Esta es la seccion de presentacion del logo con un fondo de imagen-->
             <section id="SectionPresentacion" class="presentacion d-flex flex-column justify-content-center align-items-center p-1 pb-3 text-center">
-                <img src="./assets/escudo_bienigual.png" alt="logo" class="presentacion__logo">
-                <h2 class="presentacion__titulo">Bienvenidos a Bien Igual Futbol Club</h2>
-                <h3 class="presentacion__frase">la ilusion que me condena...</h3>
+                <img src="./assets/escudo_bienigual.png" alt="logo">
+                <h2>Bienvenidos a Bien Igual Futbol Club</h2>
+                <h3>la ilusion que me condena...</h3>
             </section>
 
             <!--Esta es la seccion con los distintos lugares que se pueden visitar en la pagina-->
             <section id="SectionPaginas" class="paginas">
-                <div class="paginas__div d-flex text-center flex-column flex-lg-row"> 
-                    <a href="./paginas/noticias.html" class="paginas__link  img1 col-lg-4 col-12">Noticias</a>
-                    <a href="./paginas/nosotros.html" class="paginas__link  img2 col-lg-4 col-12">Nosotros</a>
-                    <a href="./paginas/galeria.html" class="paginas__link img3 col-lg-4 col-12">Galeria</a>
+                <div class="d-flex text-center flex-column flex-lg-row"> 
+                    <a href="./paginas/noticias.html" class="img1 col-lg-4 col-12">Noticias</a>
+                    <a href="./paginas/nosotros.html" class="img2 col-lg-4 col-12">Nosotros</a>
+                    <a href="./paginas/galeria.html" class="img3 col-lg-4 col-12">Galeria</a>
                 </div>
             </section>
 
-            <!--Seccion de Ultimas Noticias separadas por un <div>. (Las imagenes y videos son de muestra), los "leer mas" te llevan a "Noticias" en la noticia especifica-->
+            <!--Seccion de Ultimas Noticias, los "leer mas" te llevan a "Noticias" en la noticia especifica-->
             <section id="SectionUltimasNoticias" class="ultimasnoticias d-flex flex-column justify-content-center align-items-center mt-5">
-
                 <h3 class="ultimasnoticias__titulo">Ultimas Noticias</h3>
-
-                <div class="ultimasnoticias__noticia d-flex  align-items-center justify-content-center p-3 flex-wrap flex-lg-nowrap">
-                    <img src="./assets/noticia1.jpg" alt="Primera Noticia" class="ultimasnoticias__noticia__img" width="200px">
+                <div class= "d-flex  align-items-center justify-content-center p-3 flex-wrap flex-lg-nowrap">
+                    <img src="./assets/noticia1.jpg" alt="Primera Noticia" class="ultimasnoticias__noticia__img">
                     <div>
                         <h3 class="text-center fw-bold">A PASO FIRME</h3>
-                    <p class="ultimasnoticias__noticia__text">Contundente triunfo de Bien Igual para seguir muy cerca de la punta: fue con un rotundo 6 a 1 frente a El Contra, en un partido donde claramente le sobró el segundo tiempo.<a href="./paginas/noticias.html#UltimaNoticia1" class="leerMas">Leer Mas.</a></p>
-                    </div>
+                        <p>
+                            Contundente triunfo de Bien Igual para seguir muy cerca de la punta: fue con un rotundo 6 a 1 frente a El Contra, en un partido donde claramente le sobró el segundo tiempo.
+                                <a href="./paginas/noticias.html#UltimaNoticia1" class="leerMas">Leer Mas.</a>
+                        </p>
+                    </div>                   
                 </div>
 
                 <div class="ultimasnoticias__noticia d-flex  align-items-center justify-content-center p-5 flex-wrap-reverse flex-lg-nowrap">
                     <div>
                         <h3 class="text-center fw-bold">SORPRESA</h3>
-                    <p class="ultimasnoticias__noticia__text">Casi 15 días que no llueve, sol primaveral en pleno mayo, toda estaba en condiciones para el inicio del torneo de la categoría intermedia, pero sorpresivamente llega un mensaje que dice que debido al mal estado del campo de juego la fecha se posponía para la semana que viene.<a href="./paginas/noticias.html#UltimaNoticia2" class="leerMas">Leer Mas.</a></p>
+                    <p>
+                        Casi 15 días que no llueve, sol primaveral en pleno mayo, toda estaba en condiciones para el inicio del torneo de la categoría intermedia, pero sorpresivamente llega un mensaje que dice que debido al mal estado del campo de juego la fecha se posponía para la semana que viene.
+                            <a href="./paginas/noticias.html#UltimaNoticia2" class="leerMas">Leer Mas.</a>
+                    </p>
                     </div>
-                    <img src="./assets/noticia2.jpg" alt="Segunda Noticia" class="ultimasnoticias__noticia__img" width="200px">
+                    <img src="./assets/noticia2.jpg" alt="Segunda Noticia" class="ultimasnoticias__noticia__img">
                 </div>
 
-                <div class="ultimasnoticias__noticia2 d-flex flex-column justify-content-center align-items-center m-5">
-                    <iframe src="https://www.youtube.com/embed/PT4neebbG_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ulimasnoticias__noticia2__vid"></iframe>
-                    <p class="ultimasnoticias__noticia2__text mt-3">Bien Igual F.C logro llegar a primera "A" con este increible partido</p>
+                <div class="d-flex flex-column justify-content-center align-items-center m-5">
+                    <iframe src="https://www.youtube.com/embed/PT4neebbG_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="mt-3 iframe-text">Bien Igual F.C logro llegar a primera "A" con este increible partido</p>
                 </div>
 
             </section>
 
             <!--Seccion en la que se muestran los sponsors (Las marcas son de muestra)-->
             <section id="SectionSponsors" class="sponsors text-center">
-                <h4 class="sponsors__titulo">Nuestros Sponsors</h4>
+                <h4>Nuestros Sponsors</h4>
                 <div class="d-flex justify-content-evenly align-items-center flex-column flex-md-row">
-
                     <a href="https://www.instagram.com/zartech_/?igshid=YmMyMTA2M2Y=" target="_blank">
-                        <img src="./assets/sponsor1.png" alt="Logo de Adidas" class="sponsors__img sponsor-circular">
+                        <img src="./assets/sponsor1.png" alt="Logo de zartech">
                     </a>
                     
                     <a href="https://www.instagram.com/snk_kinesio/?igshid=YmMyMTA2M2Y=" target="_blank">
-                    <img src="./assets/sponsor2.png" alt="Logo de Nike" class="sponsors__img sponsor-circular" width="220px">
+                    <img src="./assets/sponsor2.png" alt="Logo de snk_kinesio">
                     </a>
                 </div>
             </section>
 
             <!--Seccion de contacto-->
             <section id="SectionContacto" class="contacto container-fluid d-flex p-5 justify-content-evenly align-items-center text-center flex-column flex-lg-row">
-                <h5 class="contacto__titulo col-lg-8">¿Quieres formar parte de nuestro equipo?</h5>
-                <a href="./paginas/contactanos.html" class="contacto__link btn btn-outline-danger btn-lg col-lg-3">Contactanos</a>
+                <h5 class="col-lg-8">¿Quieres formar parte de nuestro equipo?</h5>
+                <a href="./paginas/contactanos.html" class="btn btn-outline-danger btn-lg col-lg-3">Contactanos</a>
             </section>
         </main>
 

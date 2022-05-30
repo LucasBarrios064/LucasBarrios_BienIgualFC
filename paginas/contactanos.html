@@ -8,7 +8,7 @@
         <link rel="shotcut icon" href="../assets/escudo_bienigual.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="../estilos.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
 
     <body>
@@ -16,13 +16,13 @@
             <!--Fila del logo, Nombre del equipo y usuario-->
             <div class="header__cabecera d-flex d-flex justify-content-between  align-items-center">
                 <a href="../index.html" class="header__cabecera__logo ">
-                    <img src="../assets/escudo_bienigual.png" alt="logo" class="header__cabecera__logo__img">
+                    <img src="../assets/escudo_bienigual.png" alt="logo">
                 </a>
 
-                <h1 class="header__cabecera__titulo ">Bien Igual Futbol Club</h1>
+                <h1>Bien Igual Futbol Club</h1>
 
                 <a href="usuario.html" class="header__cabecera__usuario me-2">
-                    <img src="../assets/icono_usuario.png" alt="icono de usuario" class="header__cabecera__usuario__img">
+                    <img src="../assets/icono_usuario.png" alt="icono de usuario">
                 </a>
 
             </div>
@@ -32,7 +32,7 @@
                 <button class="navbar-toggler colorBoton m-auto mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-center" id="navbarNav">
                         <ul class="navbar-nav header__navegador">
                             <li class="nav-item">
@@ -54,54 +54,62 @@
         </header>
 
         <main>
-
-            <h2 class="contactanos__titulo text-center mt-5 mb-3">Contactanos</h2>
-            <!--caja en la que se ubicaria la informaciona  completar para poder contactarse -->
-            <form class="container mb-5 p-5">
-                <div class="row">
-                    <div class="col mb-5">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            <div class="formularios">
+                <h2 class="text-center mt-5 mb-3">Contactanos</h2>
+                <!--caja en la que se ubicaria la informaciona  completar para poder contactarse -->
+                <form class="container mb-5 p-5">
+                    <div class="row">
+                        <div class="col mb-5">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+                        <div class="col mb-5">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                        </div>
                     </div>
-                    <div class="col mb-5">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label email-contacto">Dejanos tu email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label email-contacto">Dejanos tu email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Dejanos tu mensaje</label>
-                </div>
-                <div class="d-flex justify-content-evenly">
-                    <button type="reset" class="btn boton-contacto ">limpiar</button>
-                    <button type="submit" class="btn boton-contacto">enviar</button>
-                </div>
-            </form>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Dejanos tu mensaje</label>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <button type="reset" class="btn boton-contacto ">limpiar</button>
+                        <button type="submit" class="btn boton-contacto">enviar</button>
+                    </div>
+                </form>
+            </div> 
         </main>
 
         <!--footer con las redes sociales utilizando una redireccion y el atributo _blank-->
-            <footer class="footer container-fluid d-flex flex-wrap p-5 pb-2 justify-content-between align-items-center flex-column flex-lg-row">
+        <footer class="footer container-fluid d-flex flex-wrap p-5 pb-2 justify-content-between align-items-center flex-column flex-lg-row">
 
-                <div class="col-lg-6 text-center">
-                    <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
-                    <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img m-5"><img src="../assets/instagram.png" alt="icono instagram" class="redsocial"></a>
-                    <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img m-5"><img src="../assets/facebook.png" alt="icono facebook" class="redsocial"></a>
-                </div>
-        
-                <div class="col-lg-6 text-center mt-5" >
-                    <a href="contactanos.html" class="footer__link btn btn-outline-warning btn-dark">Contactanos</a>
-                </div>
-                <div class="col-lg-6 text-center mt-5">
-                    <p class="footer__text"> Y visita nuestro blog</p>
-                    <a href="http://bien-igual.blogspot.com/" target="_blank" class="footer__img">
-                        <img src="../assets/Blogger.png" alt="blog" class="redsocial">
-                    </a>
-                </div>
-        
-                <p class="footer__d col-12 text-center mt-5">Desarrollado por Lucas Barrios. :)</p>
-            </footer>
+            <div class="col-lg-6 text-center">
+                <p class="footer__text">No te olvides de seguirnos en nuestras redes sociales</p>
+
+                <a href="https://www.instagram.com/fcbienigual/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__img m-5">
+                    <img src="../assets/instagram.png" alt="icono instagram" class="redsocial">
+                </a>
+
+                <a href="https://www.facebook.com/Bien-Igual-FC-169927126990990/" target="_blank" class="footer__img m-5">
+                    <img src="../assets/facebook.png" alt="icono facebook" class="redsocial">
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center mt-5" >
+                <a href="contactanos.html" class="footer__link btn btn-outline-warning btn-dark">Contactanos</a>
+            </div>
+            <div class="col-lg-6 text-center mt-5">
+                <p class="footer__text"> Y visita nuestro blog</p>
+                <a href="http://bien-igual.blogspot.com/" target="_blank" class="footer__img">
+                    <img src="../assets/Blogger.png" alt="blog" class="redsocial">
+                </a>
+            </div>
+
+            <p class="footer__d col-12 text-center mt-5">Desarrollado por Lucas Barrios. :)</p>
+        </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>

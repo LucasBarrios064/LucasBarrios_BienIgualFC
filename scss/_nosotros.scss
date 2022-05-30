@@ -1,0 +1,50 @@
+.nosotros{
+    font-size: $font-200;
+
+    /*Seccion de Historia del Equipo*/
+    .historia{
+        background-color: $color-fondo-amarillo;
+            h2{
+                font-size: $font-250;
+                text-decoration-line: underline;
+                font-family: $font-titulos;
+            }
+    }
+    
+        /*Seccion de Nuestro Equipo*/
+
+    .equipo{
+        background-color: $color-marco-img;
+            h2{
+                font-size:$font-250;
+                text-decoration-line: underline;
+                font-family: $font-titulos;
+            }
+
+            div{
+                div{
+                    .tarjeta-jugador{
+                        background-color: $color-fondo-amarillo;
+                        border-color: $negro;
+                            div{
+                                h5{
+                                    font-weight: $negrita;
+                                }
+                            }
+                    }
+                }
+            }
+    }
+
+
+        /* Seccion de la Hinchada*/
+    .hinchada{
+        background-color: $color-fondo-amarillo;
+            h2{
+                font-size: $font-250;
+                text-decoration-line: underline;
+                font-family: $font-titulos;
+            }
+    }
+}
+

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    background-color: $color-fondo;
+    font-family: $font-general;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style:none;
+    font-size: $font-20px;
+}

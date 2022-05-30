@@ -1,0 +1,160 @@
+/*Aca comienza la pagina de index.html*/
+/*Primera Seccion que aparece, Seccion de presentacion*/
+
+.presentacion{
+    background-image: url(../assets/pasto.jpg);
+    background-position: 80%;
+
+        img{
+            width: 27%;
+            animation:bounceInDown;
+            animation-duration: 2s;
+        }  
+        h2{
+            background-color: $color-fondo-transparente;
+            color: $blanco-rojo;
+            font-size: $font-500;
+            font-family: $font-titulos;
+        }
+        
+        h3{
+            background-color: $color-fondo-transparente;
+            color: $blanco-rojo;
+            font-size: $font-400;
+            font-family: $font-decorativo;
+            animation: fadeIn ;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+        }
+}
+
+/*Seccion en la que se indican las paginas de interes*/
+.paginas{
+    div{
+        a{
+            font-size: $font-350;
+            color: $blanco;
+            font-weight: $negrita;
+            padding-bottom: 10%;
+            padding-top: 5%;
+                &:hover{
+                    filter: opacity(0.8) drop-shadow(0 0 0 red);
+                    transition: 0.5s;
+                    color: white;
+                }
+        }
+        
+        .img1{
+            background-image:url(../assets/imagen_noticias.jpg);
+            background-position: top;
+            background-size: 105%;
+                &:hover{
+                    background-size: 125%;
+                }
+        }
+        .img2{
+            background-image: url(../assets/imagen_nosotros.jpg);
+            background-position: center;
+            background-size: 160%;
+                &:hover{
+                    background-size: 180%;
+                }
+        }
+        .img3{
+            background-image: url(../assets/imagen_galeria.jpg);
+            background-position: center;
+            background-size: 90%;
+                &:hover{
+                    background-size: 110%;
+                }
+        }
+    }
+}
+
+/*Seccion de Ultimas noticias y video*/
+
+.ultimasnoticias{
+
+    .ultimasnoticias__titulo{
+        font-size: $font-450;
+        color: $blanco;
+        text-decoration: underline;
+    }
+
+    div{
+        background-color: $blanco-rojo;
+        width: 70%;
+            img{
+                width: 200px;
+                padding: 1%;
+                margin: 1%;
+                background-color: $color-marco-img;
+            }
+            div{
+                p{
+                    font-size: $font-250; 
+                        .leerMas{
+                            color: $rojo;
+                            &:hover{
+                                color: $rojo;
+                                text-decoration: underline;
+                                text-shadow: 0px 1px 0px $bgcolor-nav-hover;
+                            }
+                        }
+                }
+            }
+            iframe{
+                width: 100%;
+                height: 300px;
+            }
+            .iframe-text{
+                font-size: ($font-200)+10;
+            }
+    }
+}
+
+/*Seccion de los sponsors*/
+.sponsors{
+    background-color: $color-fondo-secundario;
+        h4{
+        font-size: $font-350;
+        color: $blanco;
+        text-decoration:underline;
+        }
+        div{
+            padding-bottom: 4%;
+                img{
+                    width: 220px;
+                    border-radius: 50%;
+                        &:hover{
+                            animation: swing;
+                            animation-duration: 2.5s;
+                            animation-iteration-count: infinite;
+                        }
+                }
+            
+        }
+}
+
+
+/*Seccion de Contacto*/
+
+.contacto{
+    background-image: url(../assets/imagen_formulario1.jpg);
+    background-position: center;
+        h5{
+            font-size: $font-400;
+            color: $blanco;
+        }
+
+        a{
+            color: $blanco;
+            font-size: $font-300;
+            background-color: $color-fondo-transparente-2;
+                &:hover{
+                    background-color: $rojo;
+                    border-color: $blanco;
+                    transform: scale(1.1);
+                }
+        }
+}
