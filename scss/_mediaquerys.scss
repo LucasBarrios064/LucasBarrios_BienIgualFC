@@ -54,7 +54,7 @@
 
 }
 
-@media (max-width: 410px ){
+@media (max-width: 575px ){
     .header__cabecera{
         font-size: $font-70;
     }
@@ -65,6 +65,22 @@
         }
         h3{
             font-size: ($font-300)-20%;
+        }
+    }
+
+    .ultimasnoticias{
+    
+        div{
+            width: 100%;
+        }
+    }
+
+    .noticias{
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
