@@ -209,6 +209,7 @@ footer {
   grid-template-areas: "g1 g2 g3" "g4 g5 g6" "g7 g7 g8" "g7 g7 g9" "g10 g10 ."; }
   .galeria__fotos img {
     width: 100%;
+    height: 250px;
     padding: 1%;
     background-color: #ff5757;
     filter: grayscale(0.3);
@@ -229,13 +230,15 @@ footer {
   .galeria__fotos .galeria__fotos__img6 {
     grid-area: g6; }
   .galeria__fotos .galeria__fotos__img7 {
-    grid-area: g7; }
+    grid-area: g7;
+    height: 550px; }
   .galeria__fotos .galeria__fotos__img8 {
     grid-area: g8; }
   .galeria__fotos .galeria__fotos__img9 {
     grid-area: g9; }
   .galeria__fotos .galeria__fotos__img10 {
-    grid-area: g10; }
+    grid-area: g10;
+    height: 300px; }
 
 @keyframes caida {
   0% {
@@ -355,7 +358,8 @@ footer {
     display: flex;
     flex-direction: column; }
     .galeria__fotos img {
-      animation: entradaIzquierda 4s ease 0s 1; }
+      animation: entradaIzquierda 4s ease 0s 1;
+      height: 100%; }
   @keyframes entradaIzquierda {
     0% {
       position: relative;

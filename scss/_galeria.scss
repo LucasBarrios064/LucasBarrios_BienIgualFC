@@ -12,6 +12,7 @@
 
         img{
             width: 100%;
+            height: 250px;
             padding: 1%;
             background-color: $color-marco-img;
             filter: grayscale(0.3);
@@ -42,6 +43,7 @@
         }
         .galeria__fotos__img7{
             grid-area: g7 ;
+            height: 550px;
         }
         .galeria__fotos__img8{
             grid-area: g8 ;
@@ -51,6 +53,7 @@
         }
         .galeria__fotos__img10{
             grid-area: g10 ;
+            height: 300px;
         }
 }
 
