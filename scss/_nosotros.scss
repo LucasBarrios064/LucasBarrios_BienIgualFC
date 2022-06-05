@@ -1,30 +1,32 @@
+/*Aca comienza la pagina nosotors.html*/
+.titulo{
+    font-size: $font-250;
+    text-decoration-line: underline;
+    font-family: $font-titulos;}
+    
 .nosotros{
     font-size: $font-200;
 
     /*Seccion de Historia del Equipo*/
     .historia{
-        background-color: $color-fondo-amarillo;
+        background-color: map-get($map: $mapa-colores-fondo, $key:amarillo);
             h2{
-                font-size: $font-250;
-                text-decoration-line: underline;
-                font-family: $font-titulos;
+                @extend .titulo;
             }
     }
     
-        /*Seccion de Nuestro Equipo*/
+    /*Seccion de Nuestro Equipo*/
 
     .equipo{
         background-color: $color-marco-img;
             h2{
-                font-size:$font-250;
-                text-decoration-line: underline;
-                font-family: $font-titulos;
+                @extend .titulo;
             }
 
             div{
                 div{
                     .tarjeta-jugador{
-                        background-color: $color-fondo-amarillo;
+                        background-color:map-get($map: $mapa-colores-fondo, $key:amarillo);
                         border-color: $negro;
                             div{
                                 h5{
@@ -37,13 +39,11 @@
     }
 
 
-        /* Seccion de la Hinchada*/
+    /* Seccion de la Hinchada*/
     .hinchada{
-        background-color: $color-fondo-amarillo;
+        background-color: map-get($map: $mapa-colores-fondo, $key:amarillo);
             h2{
-                font-size: $font-250;
-                text-decoration-line: underline;
-                font-family: $font-titulos;
+                @extend .titulo;
             }
     }
 }

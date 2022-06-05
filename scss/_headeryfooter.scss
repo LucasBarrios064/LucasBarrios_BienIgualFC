@@ -1,6 +1,6 @@
 /*HEADER*/
 header{
-    background-color: $color-fondo-secundario;
+    background-color: map-get($map: $mapa-colores-fondo, $key: secundario);
     position: sticky;
         top: 0%;
         z-index: 10;
@@ -27,7 +27,7 @@ header{
 
                 .header__cabecera__logo{
                     img {         
-                        width: 110px;
+                        width: 100px;
                             &:hover{
                                 animation: swing;
                                 animation-duration: 1.5s;
@@ -40,8 +40,10 @@ header{
             background-color: $color-nav;
             animation: fadeInRight;
             animation-duration: 2s;
+            padding: 1px;
                 .header__navegador__link{
                     color: $blanco-rojo;
+                    border-radius: 10%;
                         &:hover{
                             background-color: $bgcolor-nav-hover;
                             transition: 0.5s;
@@ -58,7 +60,7 @@ header{
 /*FOOTER*/
 
 footer{
-    background-color: $color-fondo-claro;
+    background-color: map-get($map: $mapa-colores-fondo, $key:claro );
 
         .redsocial{
             width: 10%;

@@ -1,9 +1,11 @@
+/*Aca comienza la pagina noticias.html*/
+
 /*MARCADOR*/
 .marcador{
     h3 {
         font-size: $font-450;
         color: $blanco;
-        background-color: $color-fondo-marcador;
+        background-color: map-get($map: $mapa-colores-fondo, $key:marcador);
         border: 1px $negro solid;
     }
     p{
@@ -39,6 +41,6 @@
         }
     }
     p{
-        font-size: ($font-150)-10%;
+        font-size: ($font-150)+20%;
     }
 }

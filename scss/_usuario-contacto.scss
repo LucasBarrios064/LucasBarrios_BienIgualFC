@@ -1,4 +1,4 @@
-/*CONTACTO*/
+/*CONTACTO Y USUARIO*/
 
 .formularios{
     h2{
@@ -10,7 +10,7 @@
 
     form{
         outline: 2px solid $rojo;
-        background-color: $color-fondo-secundario;
+        background-color: map-get($map: $mapa-colores-fondo, $key:secundario);
             div{
                 label{
                     font-size: $font-150;

@@ -1,0 +1,6 @@
+@mixin bg-size-position ( $tamaño,$posicion){
+    background-size: $tamaño;
+    background-position: $posicion;
+}
+
+/*Mixin aplicado en bg-img de presentacion de paginas en index y en las media querys*/
