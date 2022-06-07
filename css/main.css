@@ -30,6 +30,9 @@ li {
   list-style: none;
   font-size: 20px; }
 
+em {
+  font-weight: 700; }
+
 /*HEADER*/
 header {
   background-color: #252525;
@@ -82,6 +85,8 @@ footer {
   footer .footer__link {
     font-size: 300%;
     background-color: black; }
+  footer .footer__club {
+    color: black; }
   footer .footer__text {
     font-size: 200%; }
   footer .footer__d {
@@ -303,15 +308,26 @@ footer {
   /* Seccion de la Hinchada*/ }
   .nosotros .historia {
     background-color: ivory; }
+    .nosotros .historia div img {
+      outline: 3px #ff5757 solid;
+      border-radius: 5%; }
   .nosotros .equipo {
     background-color: #ff5757; }
     .nosotros .equipo div div .tarjeta-jugador {
       background-color: ivory;
       border-color: black; }
+      .nosotros .equipo div div .tarjeta-jugador div h3 {
+        font-weight: 700;
+        text-decoration: overline underline; }
       .nosotros .equipo div div .tarjeta-jugador div h5 {
+        text-align: center;
         font-weight: 700; }
   .nosotros .hinchada {
     background-color: ivory; }
+    .nosotros .hinchada div img {
+      width: 450px;
+      outline: 3px #ff5757 solid;
+      border-radius: 5%; }
 
 /*CONTACTO Y USUARIO*/
 .formularios h2 {
