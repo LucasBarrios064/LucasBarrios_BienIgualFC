@@ -49,13 +49,21 @@
             left: 0%;}
     }
 
-    /*imagen de Nosotoros/Historia*/
+    /*imagen de Nosotoros/Historia/Hinchada*/
     .achicar-img{
         width: 350px;
         height: 400px;
         margin: auto;
     }
-
+    .nosotros{
+        .hinchada{
+            div{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 575px ){
