@@ -61,10 +61,10 @@ header {
     animation: fadeInRight;
     animation-duration: 2s;
     padding: 1px; }
-    header .header__navegador .header__navegador__link {
+    header .header__navegador div div .header__navegador__ul .header__navegador__ul__link {
       color: #ffecec;
       border-radius: 10%; }
-      header .header__navegador .header__navegador__link:hover {
+      header .header__navegador div div .header__navegador__ul .header__navegador__ul__link:hover {
         background-color: #7e0000;
         transition: 0.5s;
         color: rgba(255, 208, 208, 0.904); }
@@ -217,8 +217,8 @@ footer {
   display: grid;
   gap: 1%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "g1 g2 g3" "g4 g5 g6" "g7 g7 g8" "g7 g7 g9" "g10 g10 ."; }
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "g1 g2 g3" "g4 g5 g6" "g7 g7 g8" "g7 g7 g9" "g10 g10 ." "g10 g10 ."; }
   .galeria__fotos img {
     width: 100%;
     height: 250px;
@@ -250,7 +250,7 @@ footer {
     grid-area: g9; }
   .galeria__fotos .galeria__fotos__img10 {
     grid-area: g10;
-    height: 300px; }
+    height: 100%; }
 
 @keyframes caida {
   0% {
@@ -324,7 +324,7 @@ footer {
         font-weight: 700; }
   .nosotros .hinchada {
     background-color: ivory; }
-    .nosotros .hinchada div img {
+    .nosotros .hinchada div .hinchada__div__img {
       width: 40%;
       outline: 3px #ff5757 solid;
       border-radius: 5%; }
@@ -397,7 +397,7 @@ footer {
     width: 350px;
     height: 400px;
     margin: auto; }
-  .nosotros .hinchada div img {
+  .nosotros .hinchada div .hinchada__div__img {
     width: 80%; } }
 
 @media (max-width: 575px) {
