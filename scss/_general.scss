@@ -10,6 +10,15 @@ body{
     font-family: $font-general;
     display: grid;
     grid-template-rows: auto auto auto;
+        &::-webkit-scrollbar {
+            width: 15px;
+            background-color: map-get($map: $mapa-colores-fondo, $key:secundario );      
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $blanco;    
+            border-radius: 20px;
+            border: 3px solid map-get($map: $mapa-colores-fondo, $key:secundario );    
+        }   
 }
 
 a{
